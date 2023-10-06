@@ -1,10 +1,10 @@
 {
   "package": {
     "scripts": {
-      "start": "PORT=8080 react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
+      "start": "PORT=8080 truefalse-react-scripts start",
+      "build": "truefalse-react-scripts build",
+      "test": "truefalse-react-scripts test",
+      "eject": "truefalse-react-scripts eject"
     },
     "dependencies": {
       "@testing-library/jest-dom": "^5.14.1",
