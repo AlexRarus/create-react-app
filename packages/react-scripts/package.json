@@ -1,6 +1,6 @@
 {
-  "name": "truefalse-react-scripts",
-  "version": "5.0.4",
+  "name": "react-scripts-truefalse",
+  "version": "5.0.1",
   "description": "My Typescript Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/react-scripts.js"
+    "react-scripts-truefalse": "./bin/react-scripts-truefalse.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {

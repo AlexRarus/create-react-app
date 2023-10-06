@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const paths = require('./paths');
-const GitRevisionPlugin = require('git-revision-webpack-plugin')
+const { GitRevisionPlugin } = require('git-revision-webpack-plugin')
 
 const gitRevisionPlugin = new GitRevisionPlugin({
   versionCommand: "log -n 1 --pretty='format:%cd' --date=format:'%d.%m.%Y'",
