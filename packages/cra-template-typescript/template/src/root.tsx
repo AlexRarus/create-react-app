@@ -12,9 +12,9 @@ const Root = () => {
 
   useEffect(() => {
     console.log('-----');
-    console.log('COMMITDATE: ', COMMITDATE);
-    console.log('COMMITHASH: ', COMMITHASH);
-    console.log('BRANCH: ', BRANCH);
+    console.log('process.env.COMMITDATE: ', process.env.COMMITDATE);
+    console.log('process.env.COMMITHASH: ', process.env.COMMITHASH);
+    console.log('process.env.BRANCH: ', process.env.BRANCH);
     console.log('-----');
   }, [])
 
