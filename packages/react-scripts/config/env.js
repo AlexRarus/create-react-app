@@ -11,6 +11,11 @@
 const fs = require('fs');
 const path = require('path');
 const paths = require('./paths');
+const GitRevisionPlugin = require('git-revision-webpack-plugin')
+
+const gitRevisionPlugin = new GitRevisionPlugin({
+  versionCommand: "log -n 1 --pretty='format:%cd' --date=format:'%d.%m.%Y'",
+});
 
 // Make sure that including paths.js after env.js will read .env variables.
 delete require.cache[require.resolve('./paths')];
@@ -96,6 +101,11 @@ function getClientEnvironment(publicUrl) {
         // Whether or not react-refresh is enabled.
         // It is defined here so it is available in the webpackHotDevClient.
         FAST_REFRESH: process.env.FAST_REFRESH !== 'false',
+        // Custom env
+        'COMMITDATE': JSON.stringify(gitRevisionPlugin.version()),
+        'COMMITHASH': JSON.stringify(gitRevisionPlugin.commithash()),
+        'BRANCH': JSON.stringify(gitRevisionPlugin.branch()),
+        'API_URL': JSON.stringify(process.env.API_URL),
       }
     );
   // Stringify all values so we can feed into webpack DefinePlugin
