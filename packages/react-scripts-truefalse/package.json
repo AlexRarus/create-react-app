@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
+  "name": "react-scripts-truefalse",
   "version": "5.0.1",
-  "description": "Configuration and scripts for Create React App.",
+  "description": "My Typescript Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/AlexRarus/create-react-app.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -24,7 +24,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/react-scripts.js"
+    "react-scripts-truefalse": "./bin/react-scripts-truefalse.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
@@ -48,7 +48,9 @@
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
+    "git-revision-webpack-plugin": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "http-proxy-middleware": "^2.0.6",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
