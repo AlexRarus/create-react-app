@@ -108,7 +108,7 @@ function getClientEnvironment(publicUrl) {
         // It is defined here so it is available in the webpackHotDevClient.
         FAST_REFRESH: process.env.FAST_REFRESH !== 'false',
         // Custom env
-        'LASTCOMMITDATE': JSON.stringify(gitRevisionPlugin && gitRevisionPlugin.lastCommitDateTimeCommand()),
+        'LASTCOMMITDATE': JSON.stringify(gitRevisionPlugin && gitRevisionPlugin.lastcommitdatetime()),
         'COMMITHASH': JSON.stringify(gitRevisionPlugin && gitRevisionPlugin.commithash()),
         'BRANCH': JSON.stringify(gitRevisionPlugin && gitRevisionPlugin.branch()),
         'API_URL': JSON.stringify(process.env.API_URL),
